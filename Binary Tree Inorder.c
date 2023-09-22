@@ -31,7 +31,7 @@ int* inorderTraversal(struct TreeNode* root, int* returnSize) {
         return NULL;
     }
 
-    int *result = malloc(1000 * sizeof(int)); // Assuming a maximum of 1000 nodes
+    int *result = malloc(1000 * sizeof(int));
     int index = 0;
     
     inorderTraversalHelper(root, result, &index);
